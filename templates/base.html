@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ALPHA_ONE | {% block title %}{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+	<link href="{% static "css/concessionnaire.css" %}" rel="stylesheet">
+	<link href="{% static "bootstrap-icons/bootstrap-icons.css" %}" rel="stylesheet">
+	<style>
+	</style>
+</head>
+<body>
+	{% include 'header.html' %}
+
+	<section>{% block content %} {% endblock content %}</section>
+
+	{% include 'footer.html' %}
+</body>
+</html>
